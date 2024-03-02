@@ -1,5 +1,9 @@
-f = open("text.txt", "r")
+with open("text.txt", "r") as f:
+    pass
 
-print(f.name)
+print(f.closed)
+# f = open("text.txt", "r")
 
-f.close()
+# print(f.name)
+
+# f.close()
