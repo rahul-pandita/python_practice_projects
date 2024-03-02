@@ -1,2 +1,4 @@
-with open("text2.txt","w") as wr_file:
-    wr_file.write("BLAH")
+with open("text.txt","r") as rf:
+    with open("text_copy.txt", "w") as wf:
+        for line in rf:
+            wf.write(line)
