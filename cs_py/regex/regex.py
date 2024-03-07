@@ -28,7 +28,7 @@ Mr. T
 sentence = "Start a sentence and then bring it to an end"
 
 # pattern to search for 
-pattern = re.compile(r"[^a-zA-Z]")
+pattern = re.compile(r"\d{3}.\d{3}.\d{4}")
 
 matches = pattern.finditer(text_to_search)
 
