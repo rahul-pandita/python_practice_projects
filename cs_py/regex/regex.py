@@ -8,7 +8,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 Ha HaHa
 
 MetaCharacters (Need to be escaped):
-. ^ $ * + ? { } [ ] \ | ( )
+. ^ $ * + ? { } [ ] backslash | ( )
 
 coreyms.com
 
@@ -27,9 +27,9 @@ Mr. T
 
 sentence = "Start a sentence and then bring it to an end"
 
-pattern = re.compile(r"\d")
+pattern = re.compile(r"^Start")
 
-matches = pattern.finditer(text_to_search)
+matches = pattern.finditer(sentence)
 
 for match in matches:
     print(match)
