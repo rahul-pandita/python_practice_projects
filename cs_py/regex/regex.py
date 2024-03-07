@@ -27,10 +27,16 @@ Mr. T
 
 sentence = "Start a sentence and then bring it to an end"
 
-# pattern to search for 
-pattern = re.compile(r"M(r|s|rs)\.?\s\w+")
+emails = '''
+BabbluPJohnson@gmail.com
+tommy.chaudhary@manipal.edu
+rahul-123-pandita@my-work.net
+'''
 
-matches = pattern.finditer(text_to_search)
+# pattern to search for 
+pattern = re.compile(r"[a-zA-Z0-9.-]+@[a-zA-Z-]+\.(com|edu|net)")
+
+matches = pattern.finditer(emails)
 
 for match in matches:
     print(match)
