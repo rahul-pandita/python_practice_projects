@@ -34,11 +34,10 @@ rahul-123-pandita@my-work.net
 '''
 
 # pattern to search for 
-pattern = re.compile(r"\d{3}.\d{3}.\d{4}")
+pattern = re.compile(r"start", re.IGNORECASE)
 
-matches = pattern.findall(text_to_search)
+matches = pattern.search(sentence)
 
-for match in matches:
-    print(match)
+print(matches)
 
 
