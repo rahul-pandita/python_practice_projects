@@ -27,7 +27,9 @@ Mr. T
 
 sentence = "Start a sentence and then bring it to an end"
 
-# print("tab\ttab")
+pattern = re.compile(r"\d{3}[-.]\d{3}[-.]\d{4}")
 
-# Raw string
-print(r"tab\ttab")
+matches = pattern.finditer(text_to_search)
+
+for match in matches:
+    print(match)
