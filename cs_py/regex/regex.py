@@ -28,7 +28,7 @@ Mr. T
 sentence = "Start a sentence and then bring it to an end"
 
 # pattern to search for 
-pattern = re.compile(r"\d{3}.\d{3}.\d{4}")
+pattern = re.compile(r"M(r|s|rs)\.?\s\w+")
 
 matches = pattern.finditer(text_to_search)
 
