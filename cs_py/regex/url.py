@@ -12,4 +12,4 @@ matches = pattern.finditer(urls)
 
 # group 0 is everything captured
 for match in matches:
-    print(match.group(0))
+    print(match.group(2))
