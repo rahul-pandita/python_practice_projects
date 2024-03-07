@@ -28,17 +28,11 @@ Mr. T
 sentence = "Start a sentence and then bring it to an end"
 
 # pattern to search for 
-pattern = re.compile(r"[89]00[-.]\d{3}[-.]\d{4}")
+pattern = re.compile(r"[3-7]")
 
-# matches = pattern.finditer(text_to_search)
+matches = pattern.finditer(text_to_search)
 
-# for match in matches:
-    # print(match)
+for match in matches:
+    print(match)
 
-with open("user_data.txt", "r") as f:
-    contents = f.read()
-    matches = pattern.finditer(contents)
-
-    for match in matches:
-        print(match)
 
