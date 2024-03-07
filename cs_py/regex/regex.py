@@ -27,7 +27,7 @@ Mr. T
 
 sentence = "Start a sentence and then bring it to an end"
 
-pattern = re.compile(r"\d{3}[-.]\d{3}[-.]\d{4}")
+pattern = re.compile(r"\d")
 
 matches = pattern.finditer(text_to_search)
 
