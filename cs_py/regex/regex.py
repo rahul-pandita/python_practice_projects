@@ -34,9 +34,9 @@ rahul-123-pandita@my-work.net
 '''
 
 # pattern to search for 
-pattern = re.compile(r"[a-zA-Z0-9.-]+@[a-zA-Z-]+\.(com|edu|net)")
+pattern = re.compile(r"\d{3}.\d{3}.\d{4}")
 
-matches = pattern.findall(emails)
+matches = pattern.findall(text_to_search)
 
 for match in matches:
     print(match)
