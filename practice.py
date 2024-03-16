@@ -2,23 +2,10 @@ import requests
 import json
 import sys
 
-# r = requests.get("https://xkcd.com/2907/")
+if len(sys.argv) != 2:
+    sys.exit() 
 
-# print(r.text)
 
-# PRINTING OUT IMAGE    
-response = requests.get("https://imgs.xkcd.com/comics/schwa.png")
+response = requests.get("https://api.country.is/" + sys.argv[1])
 
-# content of response in bytes
-# print(response.content)
-
-with open("image.jpeg", "wb") as comic:
-    comic.write(response.content)
-
-# status code
-# print(r)
-
-# print out attributes of r object
-# print(dir(r))
-
-# print(help(r))
+print(response.json())
