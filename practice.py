@@ -2,8 +2,14 @@ import requests
 import json
 import sys
 
-if len(sys.argv) != 2:
-    sys.exit()
+r = requests.get("https://xkcd.com/2907/")
 
-r = requests.get("https://itunes.apple.com/search?entity=song&limit=1&term=" + sys.argv[1])
-print(json.dumps(r.json(), indent=2))
+print(r.text)
+
+# status code
+# print(r)
+
+# print out attributes of r object
+# print(dir(r))
+
+# print(help(r))
