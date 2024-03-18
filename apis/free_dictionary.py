@@ -4,7 +4,6 @@ import json
 
 def main():
     get_definitions(get_user_word())
-    ...
 
 def get_user_word():
     while True:
